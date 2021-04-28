@@ -1,0 +1,101 @@
+.loginFormPage {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../../images/andhika.jpg);
+  margin-top: 0;
+  margin-bottom: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.loginForm {
+  margin: auto;
+  margin-top: 200px;
+  /* margin-bottom: 200px; */
+  padding-bottom: 30px;
+  width: 350px;
+  height: 320px;
+  background: rgba(139, 139, 139, 0.8);
+  box-sizing: border-box;
+  /* box-shadow: 0 15px 25px rgba(73, 73, 73, .3); */
+  border-radius: 10px;
+  position: absolute;
+}
+
+.loginForm .formField input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color:  rgb(204, 255, 0);
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid rgb(204, 255, 0);
+  outline: none;
+  background: transparent;
+}
+
+.formHeader {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+
+}
+
+.formLabel {
+  margin-left: 15px;
+
+}
+
+.formButton {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(204, 255, 0);
+  /* color: white; */
+  padding: 14px 16px;
+  margin: 8px 10px ;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+  border-radius: 5px;
+  position:relative;
+  margin-left: 40px;
+  bottom: 10px;
+}
+
+.formButton--demo {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(204, 255, 0);
+  /* color: white; */
+  padding: 14px 16px;
+  margin: 8px 10px ;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+  border-radius: 5px;
+  position:relative;
+  margin-left: 50px;
+  /* right: -20px; */
+  bottom: 10px;
+}
+
+.logForm-outermost {
+  /* The image used */
+  /* background-image: url(../../images/andhika.jpg);
+  margin-top: 0;
+  margin-bottom: 0; */
+  /* Full height */
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}

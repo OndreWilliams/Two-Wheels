@@ -1,0 +1,84 @@
+.signUpForm-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../../images/tFoster.jpg);
+  margin-top: 0;
+  margin-bottom: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  justify-content: center;
+}
+
+.signUpForm {
+  margin: auto;
+  margin-top: 130px;
+  width: 350px;
+  height: 480px;
+  background: rgba(139, 139, 139, 0.9);
+  box-sizing: border-box;
+  border-radius: 10px;
+  position: absolute;
+
+}
+
+.signUpForm .formField input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color:  rgb(204, 255, 0);
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid rgb(204, 255, 0);
+  outline: none;
+  background: transparent;
+}
+
+.formHeader {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+
+}
+
+.formLabel {
+  margin-left: 15px;
+
+}
+
+.formButton {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(204, 255, 0);
+  /* color: white; */
+  padding: 14px 16px;
+  margin: 8px 10px ;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+  border-radius: 5px;
+  position:relative;
+  margin-left: 40px;
+  bottom: 10px;
+}
+
+.formButton--demo {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgb(204, 255, 0);
+  /* color: white; */
+  padding: 14px 16px;
+  margin: 8px 10px ;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+  border-radius: 5px;
+  position:relative;
+  margin-left: 50px;
+  /* right: -20px; */
+  bottom: 10px;
+}
