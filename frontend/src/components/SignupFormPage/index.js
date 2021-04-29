@@ -29,65 +29,67 @@ function SignupFormPage() {
   };
 
   return (
-    <div className="signUpForm-container">
-      <form onSubmit={handleSubmit} className="signUpForm">
-        <ul>
-          {errors.map((error, idx) => <li key={idx}>{error}</li>)}
-        </ul>
-        <div>
-          <h2 className="formHeader">Sign Up</h2>
-        </div>
-        <div className="formField">
-          <label className="formLabel">
-            Email
-            <input
-              type="text"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-          </label>
-        </div>
-        <div className="formField">
-          <label className="formLabel">
-            Username
-            <input
-              type="text"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-              required
-            />
-          </label>
-        </div>
-        <div className="formField">
-          <label className="formLabel">
-            Password
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-            />
-          </label>
-        </div>
-        <div className="formField">
-          <label className="formLabel">
-            Confirm Password
-            <input
-              type="password"
-              value={confirmPassword}
-              onChange={(e) => setConfirmPassword(e.target.value)}
-              required
-            />
-          </label>
-        </div>
-        <div >
-          <button className="formButton" type="submit">Sign Up</button>
-          <button className="formButton--demo" >Demo</button>
-        </div>
-
-      </form>
+    <div className="signUpFormPage">
+      <div className="signUpForm-container">
+        <form onSubmit={handleSubmit} className="signUpForm">
+          <ul>
+            {errors.map((error, idx) => <li key={idx}>{error}</li>)}
+          </ul>
+          <div>
+            <h2 className="formHeader">Sign Up</h2>
+          </div>
+          <div className="formField">
+            <label className="formLabel">
+              Email
+              <input
+                type="text"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+            </label>
+          </div>
+          <div className="formField">
+            <label className="formLabel">
+              Username
+              <input
+                type="text"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                required
+              />
+            </label>
+          </div>
+          <div className="formField">
+            <label className="formLabel">
+              Password
+              <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+            </label>
+          </div>
+          <div className="formField">
+            <label className="formLabel">
+              Confirm Password
+              <input
+                type="password"
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+                required
+              />
+            </label>
+          </div>
+          <div >
+            <button className="formButton" type="submit">Sign Up</button>
+            <button className="formButton--demo" >Demo</button>
+          </div>
+        </form>
+      </div>
     </div>
+
   );
 }
 

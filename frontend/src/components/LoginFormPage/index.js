@@ -27,7 +27,7 @@ function LoginFormPage() {
 
   return (
     <div className="loginFormPage">
-      <div className="logForm-outermost">
+      <div className="loginForm-container">
       <form onSubmit={handleSubmit} className="loginForm">
         <ul>
           {errors.map((error, idx) => <li key={idx}>{error}</li>)}

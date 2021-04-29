@@ -12,13 +12,11 @@
 .loginForm {
   margin: auto;
   margin-top: 200px;
-  /* margin-bottom: 200px; */
   padding-bottom: 30px;
   width: 350px;
   height: 320px;
   background: rgba(139, 139, 139, 0.8);
   box-sizing: border-box;
-  /* box-shadow: 0 15px 25px rgba(73, 73, 73, .3); */
   border-radius: 10px;
   position: absolute;
 }
@@ -45,7 +43,8 @@
 
 .formLabel {
   margin-left: 15px;
-
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .formButton {
@@ -83,19 +82,9 @@
   bottom: 10px;
 }
 
-.logForm-outermost {
-  /* The image used */
-  /* background-image: url(../../images/andhika.jpg);
-  margin-top: 0;
-  margin-bottom: 0; */
-  /* Full height */
+.loginForm-container {
   display: flex;
   justify-content: center;
   width: 100vw;
   height: 100vh;
-
-  /* Center and scale the image nicely */
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
 }

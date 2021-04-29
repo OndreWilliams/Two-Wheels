@@ -1,0 +1,43 @@
+.linksBar {
+
+}
+
+.homeLink {
+  background-color: black;
+  color: rgb(204, 255, 0);
+  opacity: 0.8;
+  margin-left: 0px;
+  margin-right: auto;
+  margin-top: 15px;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  height: 20px;
+  width: 75px;
+  border-radius: 5px;
+  text-decoration: none;
+  float: left;
+  font-size: 18px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.formLinks {
+  background-color: black;
+  color: rgb(204, 255, 0);
+  opacity: 0.8;
+  margin-right: 20px;
+  margin-left: auto;
+  margin-top: 15px;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  height: 20px;
+  width: 75px;
+  border-radius: 5px;
+  text-decoration: none;
+  float: right;
+  font-size: 18px;
+}
