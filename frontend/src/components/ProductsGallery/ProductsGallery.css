@@ -1,0 +1,112 @@
+.productsPage {
+
+  height: 100%;
+  width: 100vw;
+  background-image: url(../../images/john-nz.jpg);
+  margin-top: 0;
+  margin-bottom: 0;
+  background-position: center;
+  background-repeat:repeat-y;
+  background-size: cover;
+  padding-top: 100px;
+}
+
+.productsContainer {
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 30px 100px 80px 50px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.productLink {
+  text-decoration: none;
+}
+
+.productCard {
+  background-color: rgba(139, 139, 139, 0.8);;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* padding-left: 20px; */
+  width: 400px;
+  height: 400px;
+  margin-bottom: 20px;
+  margin: 20px 20px;
+}
+
+.productImage {
+  /* position:relative; */
+  /* margin-bottom: 50px; */
+  justify-self: flex-end;
+}
+
+.cardHeader {
+  margin-bottom: 20px;
+  margin-top: 0px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  justify-self: flex-end;
+}
+
+.price {
+  height: 25px;
+  /* font-size: 0.8em; */
+  color: black;
+  overflow: hidden;
+  text-overflow: "...";
+  display: flex;
+  align-self: center;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.productsSearch {
+  position: absolute;
+  padding: 0;
+  width: 30%;
+  height: 50px;
+  cursor: pointer;
+}
+
+input.searchBox:focus {
+  outline-width: 0;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+
+input::placeholder {
+  color:rgb(204, 255, 0);
+}
+.searchBox {
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+  background-color:black;
+  opacity: 0.8;
+  color: rgb(204, 255, 0);
+  border-style: none;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+}

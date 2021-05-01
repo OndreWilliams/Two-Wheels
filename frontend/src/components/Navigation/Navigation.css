@@ -1,9 +1,9 @@
-.linksBar {
+/* .linksBar {
 
-}
+} */
 
 .homeLink {
-  background-color: black;
+  font-family: 'Permanent Marker', cursive;
   color: rgb(204, 255, 0);
   opacity: 0.8;
   margin-left: 0px;
@@ -13,11 +13,11 @@
   cursor: pointer;
   padding: 15px;
   height: 20px;
-  width: 75px;
+  width: 200px;
   border-radius: 5px;
   text-decoration: none;
   float: left;
-  font-size: 18px;
+  font-size: 25px;
 }
 
 li {

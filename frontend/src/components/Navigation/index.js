@@ -38,8 +38,9 @@ function Navigation({ isLoaded }){
         exact to="/"
         className="homeLink"
         >
-          Home
+          Two Wheels
         </NavLink>
+
         {isLoaded && sessionLinks}
       </li>
     </ul>
