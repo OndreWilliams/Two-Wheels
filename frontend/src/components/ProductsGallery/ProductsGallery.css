@@ -49,7 +49,14 @@
 .productImage {
   /* position:relative; */
   /* margin-bottom: 50px; */
+  width: 400px;
   justify-self: flex-end;
+}
+
+.productImage img  {
+  margin: 20px;
+  height: 200px;
+  object-fit: cover;
 }
 
 .cardHeader {

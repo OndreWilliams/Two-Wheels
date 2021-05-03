@@ -16,11 +16,22 @@
 
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .productDetailImage {
   width: 100%;
   margin: 0;
+}
+
+.productDetailImage img {
+
+  margin-right: 100px;
+  margin-bottom: 40px;
+  margin-left: 100px;
+
+  object-fit: cover;
+  height: 450px;
 }
 
 .productInfo {
@@ -30,6 +41,10 @@
   margin-bottom: 0;
   align-self: flex-end;
 }
+
+.productDesc {
+  font-size: 18px;
+}
 .buy {
   justify-self: flex-end;
   display: flex;
@@ -37,6 +52,7 @@
   justify-content: flex-end;
   padding-right: 20px;
   margin: 20px 5px;
+  padding-bottom: 20px;
 }
 
 .price {

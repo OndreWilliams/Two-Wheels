@@ -26,12 +26,12 @@ const ProductDetail = () => {
     <div className="product-detail-container">
       <div className="product-detail">
         <div className="productDetailImage">
-          <img src={product.imageUrl} alt="Product " />
+          <img className="detailImg" src={product.imageUrl} alt="Product " />
         </div>
         <div className="productInfo">
           <div>
             <h1 className="productName">{product.name}</h1>
-            <p className="productName">{product.description}</p>
+            <p className="productDesc">{product.description}</p>
           </div>
           <div className="buy">
             <span className="price">{`$${product.price}.00`}</span>

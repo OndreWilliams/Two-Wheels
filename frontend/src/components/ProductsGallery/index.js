@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom';
 import { getAllProducts } from '../../store/products';
 
 import './ProductsGallery.css';
+
 const ProductsGallery = () => {
   const dispatch = useDispatch();
 
@@ -56,12 +57,12 @@ const ProductsGallery = () => {
       </div>
 
       <nav className="productsContainer">
-        {filteredProducts.map((product) => {
+        {products.filter(product => product.name.toLowerCase().includes(searchTerm.toLowerCase())).map((product) => {
           return (
             <NavLink className="productLink" key={product.name} exact to={`/products/${product.id}`}>
               <div className="productCard">
                 <div className="productImage">
-                  <img src={product.imageUrl} alt="Product" />
+                  <img clasName="productImg" src={product.imageUrl} alt="Product" />
                 </div>
                 <div className="cardHeader">
                   <p className="productTitle">{product.name}</p>
