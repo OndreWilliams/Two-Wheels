@@ -20,8 +20,7 @@ export const getAllProducts = () => async (dispatch) => {
   if (response.ok) {
     const data = await response.json();
     const list = data.products;
-    // console.log("************************");
-    // console.log(list);
+
     dispatch(load(list));
   }
 };
