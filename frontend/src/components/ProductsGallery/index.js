@@ -18,22 +18,7 @@ const ProductsGallery = () => {
     return state.products.list;
   });
 
-  const [filteredProducts, setFilteredProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-
-  useEffect(() => {
-    if(filteredProducts.length < 1)
-      setFilteredProducts([...products]);
-  },[]);
-
-  useEffect(() => {
-    if(searchTerm.length > 0){
-      setFilteredProducts(products.filter(product => product.name.toLowerCase().includes(searchTerm.toLowerCase())));
-      console.log('filt', filteredProducts);
-    } else {
-      setFilteredProducts(products);
-    }
-  }, [searchTerm]);
 
   if (!products) {
     return null;
@@ -57,7 +42,12 @@ const ProductsGallery = () => {
       </div>
 
       <nav className="productsContainer">
-        {products.filter(product => product.name.toLowerCase().includes(searchTerm.toLowerCase())).map((product) => {
+        {products.filter(product =>
+          product.name
+          .toLowerCase()
+          .includes(searchTerm.toLowerCase()))
+          .map((product) => {
+
           return (
             <NavLink className="productLink" key={product.name} exact to={`/products/${product.id}`}>
               <div className="productCard">
