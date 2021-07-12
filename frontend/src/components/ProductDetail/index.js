@@ -2,6 +2,7 @@ import { useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { getOneProduct, getAllProducts } from '../../store/products';
+import { addCartItem } from '../../store/cart';
 import './ProductDetail.css';
 
 const ProductDetail = () => {
@@ -15,6 +16,10 @@ const ProductDetail = () => {
   useEffect(() => {
     dispatch(getOneProduct(id));
   }, [dispatch, id]);
+
+  const onAddToCart = () => {
+    dispatch(addCartItem(product));
+  };
 
   const product = useSelector(state => state.products[id]);
 
@@ -37,10 +42,12 @@ const ProductDetail = () => {
             <span className="price">{`$${product.price}.00`}</span>
             <button
               className="addToCart"
-            >Add to cart</button>
+              onClick={onAddToCart}
+            >
+              Add to cart
+            </button>
           </div>
         </div>
-
       </div>
     </div>
   );

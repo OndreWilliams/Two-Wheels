@@ -20,6 +20,17 @@
   font-size: 25px;
 }
 
+.userLogo {
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+}
+
+.fa-biking {
+  color: rgb(204, 255, 0);
+}
+
 li {
   list-style-type: none;
 }
