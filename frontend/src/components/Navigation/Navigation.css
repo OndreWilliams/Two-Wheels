@@ -1,34 +1,51 @@
-/* .linksBar {
-
-} */
+.linksBar {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  height: 50px;
+}
 
 .homeLink {
   font-family: 'Permanent Marker', cursive;
   color: rgb(204, 255, 0);
   opacity: 0.8;
-  margin-left: 0px;
+  margin-left: 15px;
   margin-right: auto;
-  margin-top: 15px;
+  margin-bottom: 0px;
+  margin-top: auto;
   border: none;
   cursor: pointer;
-  padding: 15px;
-  height: 20px;
-  width: 200px;
+
   border-radius: 5px;
   text-decoration: none;
   float: left;
   font-size: 25px;
+  grid-column-start: 1;
+  /* justify-self: end; */
 }
 
 .userLogo {
-  width: 35px;
-  height: 35px;
   background-color: transparent;
   border: none;
+  grid-column-start: 6;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 15px;
+  justify-self: end;
 }
 
 .fa-biking {
   color: rgb(204, 255, 0);
+  opacity: 0.8;
+  margin: auto;
+}
+
+.welcome {
+  grid-column-start: 7;
+  justify-self: start;
+  align-self: end;
+  font-size: 20px;
+  /* font-weight: bold; */
+  font-family: 'Permanent Marker', cursive;
 }
 
 li {
@@ -39,16 +56,56 @@ li {
   background-color: black;
   color: rgb(204, 255, 0);
   opacity: 0.8;
-  margin-right: 20px;
-  margin-left: auto;
-  margin-top: 15px;
+  margin: auto;
   border: none;
   cursor: pointer;
-  padding: 15px;
-  height: 20px;
-  width: 75px;
+  padding: 0;
+  height: 35px;
+  width: 80px;
   border-radius: 5px;
   text-decoration: none;
-  float: right;
   font-size: 18px;
+  text-align: center;
+}
+
+.login-button {
+  grid-column-start: 6;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  justify-self: end;
+  width: 80px;
+}
+
+.signup-button {
+  grid-column-start: 7;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 40px;
+  justify-self: start;
+  width: 80px;
+}
+
+.cart-button {
+  grid-column-start: 8;
+  margin: auto;
+  width: 80px;
+}
+
+.logout-button {
+  grid-column-start: 2;
+}
+
+.profile-dropdown {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.user-info_cntnr {
+  grid-column-start: 1;
+  margin: auto;
+}
+
+.user-info {
+  font-weight: bold;
 }
