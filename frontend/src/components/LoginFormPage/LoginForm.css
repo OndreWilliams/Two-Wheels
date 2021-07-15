@@ -28,14 +28,14 @@
   color:  rgb(204, 255, 0);
   margin-bottom: 20px;
   border: none;
-  border-bottom: 1px solid rgb(204, 255, 0);
+  border-bottom: 1px solid rgba(204, 255, 0, .8);
   outline: none;
   background: transparent;
 }
 
 .formHeader {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 0px;
   padding-top: 10px;
   padding-bottom: 15px;
 
@@ -50,7 +50,7 @@
 .formButton {
   font-size: 18px;
   font-weight: bold;
-  background-color: rgb(204, 255, 0);
+  background-color: rgba(204, 255, 0, .8);
   /* color: white; */
   padding: 14px 16px;
   margin: 8px 10px ;

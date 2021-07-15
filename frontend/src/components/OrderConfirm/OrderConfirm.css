@@ -1,0 +1,32 @@
+.confirmation-page {
+  background-color: rgb(83, 83, 83);
+  width: 100vw;
+  min-height: 85vh;
+  height: auto;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+
+.confirmation-box {
+  margin: auto;
+  background-color: black;
+  opacity: .8;
+  height: 250px;
+  width: 700px;
+  border-radius: 10px;
+}
+
+.thank-you {
+  text-align: center;
+  font-size: 30px;
+  color: rgba(204, 255, 0, .9);
+  padding-top: 80px;
+
+}
+
+.confirmation-message {
+  text-align: center;
+  font-size: 24px;
+  color: rgba(204, 255, 0, .9);
+  padding-top: 15px;
+}

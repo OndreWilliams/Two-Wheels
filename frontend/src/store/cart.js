@@ -1,6 +1,7 @@
 const ADD_ITEM = "cart/ADD_ITEM";
 const REMOVE_ITEM = "cart/REMOVE_ITEM";
 const CLEAR_CART = "cart/CLEAR_CART";
+const SUBMIT_ORDER = "cart/SUBMIT_ORDER";
 
 const storage = window.localStorage;
 
@@ -22,6 +23,22 @@ export const clearCart = () => {
   return {
     type: CLEAR_CART,
   };
+};
+
+export const submitOrder = (order) => async (dispatch) => {
+  // const response = await fetch("/api/cart/", {
+  //   method: 'POST',
+  //   headers: {
+  //     'Content-Type': 'application/json'
+  //   },
+  //   body: JSON.stringify(order)
+  // });
+  // if (response.ok){
+  //   const data = await response.json();
+  //   dispatch(clearCart());
+
+  //   return data;
+  // }
 };
 
 let initialState = {};

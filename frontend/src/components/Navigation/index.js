@@ -46,14 +46,16 @@ function Navigation({ isLoaded }){
 
       {isLoaded && sessionLinks}
 
-      <NavLink
-        to="/cart"
-        className="cart-button"
-      >
-        <button className="formLinks">
-          Cart
-        </button>
-      </NavLink>
+      { sessionUser &&
+        <NavLink
+          to="/cart"
+          className="cart-button"
+        >
+          <button className="formLinks">
+            Cart
+          </button>
+        </NavLink>
+      }
     </div>
   );
 }
