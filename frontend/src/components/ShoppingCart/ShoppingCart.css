@@ -84,3 +84,7 @@ button.submit-order__button {
   margin: auto;
   width: 100%;
 }
+
+form {
+  padding: 0px 10px;
+}

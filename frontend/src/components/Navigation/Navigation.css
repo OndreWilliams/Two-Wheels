@@ -1,7 +1,25 @@
 .linksBar {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+
   height: 50px;
+}
+
+@media only screen and (min-width: 1225px) {
+  .linksBar {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1224px){
+  .linksBar {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media only screen  and (max-width: 999px){
+  .linksBar {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 .homeLink {
@@ -20,13 +38,14 @@
   float: left;
   font-size: 25px;
   grid-column-start: 1;
+  grid-column-end: 3;
   /* justify-self: end; */
 }
 
 .userLogo {
   background-color: transparent;
   border: none;
-  grid-column-start: 6;
+  grid-column-start: -4;
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 15px;
@@ -40,7 +59,7 @@
 }
 
 .welcome {
-  grid-column-start: 7;
+  grid-column-start: -3;
   justify-self: start;
   align-self: end;
   font-size: 20px;
@@ -69,7 +88,7 @@ li {
 }
 
 .login-button {
-  grid-column-start: 6;
+  grid-column-start: -3;
   margin-top: auto;
   margin-bottom: auto;
 
@@ -78,16 +97,17 @@ li {
 }
 
 .signup-button {
-  grid-column-start: 7;
+  grid-column-start: -2;
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 40px;
+  margin-right: 10px;
   justify-self: start;
   width: 80px;
 }
 
 .cart-button {
-  grid-column-start: 8;
+  grid-column-start: -2;
   margin: auto;
   width: 80px;
 }
@@ -104,6 +124,7 @@ li {
 .user-info_cntnr {
   grid-column-start: 1;
   margin: auto;
+  margin-right: 5px;
 }
 
 .user-info {

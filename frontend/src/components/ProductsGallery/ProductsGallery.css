@@ -1,6 +1,6 @@
 .productsPage {
 
-  height: 900px;
+  min-height: 900px;
   width: 100vw;
   background-image: url(../../images/john-nz.jpg);
   margin-top: 0;
