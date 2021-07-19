@@ -40,6 +40,7 @@
 .cart__main {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
   min-height: 60vh;
   padding: 5px;
 }
@@ -53,12 +54,6 @@
   margin: 0px auto auto auto;
 }
 
-.cart__checkout {
-  /* display: grid;
-  grid-template-rows: 1fr 1fr; */
-  /* padding-top: 20px; */
-}
-
 .checkout-form {
   margin: auto;
   width: 450px;
@@ -66,7 +61,6 @@
   background: rgba(139, 139, 139, 0.9);
   box-sizing: border-box;
   border-radius: 10px;
-  /* position: absolute; */
   align-self: center;
   justify-self: start;
 }

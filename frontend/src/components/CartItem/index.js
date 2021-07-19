@@ -25,21 +25,19 @@ function CartItem({product, quantity}){
         <p className="cart-item__pq--price">{`$${product.price}.00`}</p>
 
         <div className="cart-item__pq--quantity-cntnr">
-
-        <div className="cart-item__pq--quantity-actual">{`Quantity: ${quantity}`}</div>
-          {/* <button
+          <button
             className="cart-item__pq--quantity-minus"
-            onClick={onSubtractQuantity}
+            onClick={() => onSubtractQuantity(product)}
           >
             -
           </button>
           <div className="cart-item__pq--quantity-actual">{quantity}</div>
           <button
             className="cart-item__pq--quantity-plus"
-            onClick={onAddQuantity}
+            onClick={() => onAddQuantity(product)}
           >
             +
-          </button> */}
+          </button>
         </div>
       </div>
     </div>
