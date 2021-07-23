@@ -58,7 +58,7 @@
   margin: auto;
   width: 450px;
   height: auto;
-  background: rgba(139, 139, 139, 0.9);
+  background: rgb(139, 139, 139, 0.9);
   box-sizing: border-box;
   border-radius: 10px;
   align-self: center;
@@ -81,4 +81,9 @@ button.submit-order__button {
 
 form {
   padding: 0px 10px;
+}
+
+.cart__items--empty {
+  color:rgb(160, 160, 160);
+  font-size: 27px;
 }

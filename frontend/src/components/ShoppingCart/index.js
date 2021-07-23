@@ -43,7 +43,6 @@ function ShoppingCart(){
     Object.keys(cart).reduce((sum, itemID) => cart[itemID] + sum, 0);
 
   const handleSubmit = (e) => {
-    console.log("$$$$$$$$$$$$$$$$$$$$$$$$$$$")
 
     e.preventDefault();
     dispatch(clearCart());
@@ -61,7 +60,9 @@ function ShoppingCart(){
         </div>
         <div className="cart__main">
           <div className="cart__items">
-            {console.log("cart", cart)}
+            { totalCost === 0 &&
+              <div className="cart__items--empty">Your cart is empty</div>
+            }
             {Object.entries(cart).map(([key, value]) => {
                 return (
                   <CartItem product={products[key]} quantity={value} />

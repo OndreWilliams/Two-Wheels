@@ -48,6 +48,7 @@
   margin-bottom: auto;
   margin-right: 15px;
   justify-self: end;
+  cursor: pointer;
 }
 
 .fa-biking {
