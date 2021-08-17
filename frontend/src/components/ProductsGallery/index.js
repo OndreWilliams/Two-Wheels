@@ -56,7 +56,7 @@ const ProductsGallery = () => {
                 </div>
                 <div className="cardHeader">
                   <p className="productTitle">{product.name}</p>
-                  <p className="price">{`$${product.price}.00`}</p>
+                  <div className="price">{`$${product.price}.00`}</div>
                 </div>
               </div>
             </NavLink>

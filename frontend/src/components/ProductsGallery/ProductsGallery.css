@@ -19,7 +19,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 30px 100px 80px 50px;
+  padding: 30px 100px 80px 100px;
   box-sizing: border-box;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -30,7 +30,7 @@
 }
 
 .productCard {
-  background-color: rgba(139, 139, 139, 0.8);;
+  background-color: rgba(139, 139, 139, 0.8);
   border: none;
   box-sizing: border-box;
   border-radius: 5px;
@@ -39,7 +39,6 @@
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  /* padding-left: 20px; */
   width: 400px;
   height: 400px;
   margin-bottom: 20px;
@@ -47,8 +46,6 @@
 }
 
 .productImage {
-  /* position:relative; */
-  /* margin-bottom: 50px; */
   width: 400px;
   justify-self: flex-end;
 }
@@ -67,19 +64,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   align-items: center;
   justify-self: flex-end;
 }
 
-.price {
+div.price {
   height: 25px;
-  /* font-size: 0.8em; */
   color: black;
   overflow: hidden;
   text-overflow: "...";
-  display: flex;
-  align-self: center;
+  margin: auto;
+  text-align: center;
 }
 
 .searchContainer {
